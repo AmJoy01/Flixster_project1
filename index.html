@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flixster Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Go to FLixster -->
+    <div id="title">
+      <h3>
+        <span><img src="" alt="" /></span>Flixster
+      </h3>
+      <div id="search-input">
+        <form id="playingForm" action="">
+          <button id="nowPlayingBtn" onclick="getNowPlayingMovies()">
+            Now Playing
+          </button>
+        </form>
+        <form id="searchForm" action="">
+          <input
+            id="searchBar"
+            type="textBar"
+            placeholder="Search for Movies"
+          />
+          <span><button id="searchBtn">Search</button></span>
+        </form>
+      </div>
+    </div>
+
+    <section>
+      <div id="movies-grid">
+        <div class="movie-card">
+          <div id="movie-poster"><img src="" alt="" /></div>
+          <div class="movie-title"></div>
+          <div class="movie-votes"></div>
+        </div>
+      </div>
+    </section>
+    <form id="loadForm" action=""></form>
+    <button
+      id="loadBtn"
+      class="hidden"
+      onclick="getNowPlayingMovies(), getSearchMovies()"
+    >
+      Load more
+    </button>
+  </body>
+  <script src="script.js"></script>
+</html>

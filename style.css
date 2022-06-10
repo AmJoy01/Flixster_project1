@@ -1,0 +1,87 @@
+h2{
+    color: #FFFCF2;
+    color:#ccc5b9;
+    color: #403d39;
+    color: #252422;
+    color:#eb5e28;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #252422;
+    background-image: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fffcf2;
+    display: block;
+}
+
+#title{
+    position: relative;
+    width: 989px;
+    margin: 0 auto;
+}
+
+#searchBar{
+    padding: 0 21px 0 14px;
+    width: 220px;
+}
+
+input[type="textbar"]{
+    outline:none;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: larger;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.hidden{
+    display: none;
+}
+
+.movie-card{
+    margin-top: -20px;
+}
+
+#searchForm{
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    right: 160px;
+    border-radius: 30%;
+}
+
+#searchBtn{
+    padding: 5px 10px;
+    border-radius: 0.5em;
+    background-color: #ced4da;
+    color: black;
+}
+
+#searchBtn:hover, #nowPlayingBtn:hover{
+    border-color: #eb5e28;
+    color: black;
+    box-shadow: 0 0.5em 0.5em -0.4em #eb5e28;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+/* #movie-poster img{
+width: 200px;
+height: 250px;
+} */
+
+.movie-card{
+display: inline-block;
+} 
+
+
