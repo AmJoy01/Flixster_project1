@@ -21,9 +21,7 @@
       </h3>
       <div id="search-input">
         <form id="playingForm" action="">
-          <button id="nowPlayingBtn" onclick="getNowPlayingMovies()">
-            Now Playing
-          </button>
+          <button id="nowPlayingBtn">Now Playing</button>
         </form>
         <form id="searchForm" action="">
           <input
@@ -32,27 +30,22 @@
             placeholder="Search for Movies"
           />
           <span><button id="searchBtn">Search</button></span>
+          <span></span>
         </form>
+        <span
+          ><form id="clearForm" action="">
+            <button id="clearBtn">Clear</button>
+          </form></span
+        >
       </div>
     </div>
 
     <section>
-      <div id="movies-grid">
-        <div class="movie-card">
-          <div id="movie-poster"><img src="" alt="" /></div>
-          <div class="movie-title"></div>
-          <div class="movie-votes"></div>
-        </div>
-      </div>
+      <div id="movies-grid"></div>
     </section>
-    <form id="loadForm" action=""></form>
-    <button
-      id="loadBtn"
-      class="hidden"
-      onclick="getNowPlayingMovies(), getSearchMovies()"
-    >
-      Load more
-    </button>
+    <form id="loadForm" action="">
+      <button id="loadBtn" class="hidden">Load more</button>
+    </form>
   </body>
   <script src="script.js"></script>
 </html>
